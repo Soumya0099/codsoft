@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/1cac1ee6be.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo2.png" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#service">SERVICE</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#reach-us">REACH US</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>    
+            </nav>
+            <div class="header-text">
+                <p>A Pixel of Devloper</p>
+                <h2>Hi I`m <span>Soumya R.</span><br> Patra From Odisha</h2>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------about------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-clo1">
+                    <img src="image/user2.png">
+                </div>
+                <div class="about-clo2">
+                    <h1 class="text">About</h1>
+                    <p >HELLO  Everyone, <br><br>
+                        Myself Soumya Ranjan Patra From Balasore,Odisha,India. <br>
+                        I took My carrier in CSE(Computer Science Engineering) after my +2 carrier. <br>
+                        Now I study at Srinix College Of Engineering,Balasore. 
+                    </p>
+                    <div class="skill">
+                      <p class="sub-skils active-skill" onclick="opentab('skill')">Skill</p>
+                      <!-- <p class="sub-skils" onclick="opentab('Experiance')">Experiance</p> -->
+                      <!-- <p class="sub-skils" onclick="opentab('Education')">Education</p> -->
+                    </div>
+                    <!-- ---------------Skill----------------- -->
+                    <div class="skill-content active-tab" id="skill">
+                        <ul>
+                            <li><span>UI&UX</span><br>Have a basic Knowladge about user interface and user experiance</li>
+                            <li><span>Web Devlopment</span><br>Good Knowladge about Web Devlopment Language</li>
+                            <li><span>Language</span><br>Knowladge about HTML,CSS,JS,ETC</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------service----------- -->
+    <div id="service">
+        <div class="container">
+            <h1 class="text">My Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Devlope</h2>
+                    <p>The Devloper worn on entire website. <br>The client Site and server site can handel a Devloper.+</p>
+                    <a href="https://www.geeksforgeeks.org/web-development/" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>In a website most important part is design like UI/UX. <br>In UI/UX section a devloer know about how user interact with their website</p>
+                    <a href="https://bootcamp.cvn.columbia.edu/blog/what-is-ux-design" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-chrome"></i>
+                    <h2>WebApp Design</h2>
+                    <p>In WebApp Design we work on a site view of a android app. <br>Every android app have a their own website</p>
+                    <a href="https://www.hotjar.com/web-app-design/"  target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------portfolio----------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="text">I Refers</h1>
+            <div class="work-list">
+                <div class="work">
+                        <img src="image/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media</h3>
+                            <p>You can enjoy your free time with social meadia. <br>I refer you to consume less time on social media </p>
+                            <a href="https://bit.ly/m/sr_social_links" target="_blank"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                        <img src="image/work-2.png">
+                        <div class="layer">
+                            <h3>Movie Download</h3>
+                            <p>If you have a habit to see movie. I refer a best movie dowload  website.Here you can Dowload any Movie</p>
+                            <a href="https://hdhub4u.markets/" target="_blank"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        </div>
+                </div>
+                <div class="work">
+                        <img src="image/work-3.png">
+                        <div class="layer">
+                            <h3>Shopping Site</h3>
+                            <p>Here you can Shopping any online product With Trusted Site</p>
+                            <a href="https://www.amazon.in/" target="_blank"><i class="fa-sharp fa-solid fa-link"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------Reach Us----------------- -->
+    <div id="reach-us">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left"> 
+                    <h1 class="text">Contact Me</h1>
+                    <p class="text2"><i class="fa-regular fa-envelope"></i>soumyaranjanpatra@gmail.com</p>
+                    <p class="text2"><i class="fa-solid fa-phone-volume"></i>6372855100</p>
+                    <div class="social-icon">
+                        <a href="https://www.facebook.com/soumyaranjan.patra.5817" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/soumya-ranjan-patra-8b5942246/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/soumyaofficial09/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/Soumya0099" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://codepen.io/Soumya0099" target="_blank"><i class="fa-brands fa-codepen"></i></a>
+                    </div>
+                    <a href="image/Vicky RESUME.docx" download class="btn">Dowload CV</a> 
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Name" required>
+                        <textarea name="Massage" placeholder="Currently not working try submit after some time" rows="6"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------Copy Right---------- -->
+    <div class="copyright">
+        <p>
+            <i class="fa-sharp fa-regular fa-copyright" id="copy"></i>copyright made <i class="fa-sharp fa-solid fa-heart"></i> by soumya
+        </p>
+    </div>
+
+    <script>
+    
+        
+        let sidemenu=document.getElementById("side-menu");
+
+        function openmenu(){
+                sidemenu.style.right="0";
+        }
+        function closemenu(){
+                sidemenu.style.right="-200px";
+        }
+
+    </script>
+</body>
+
+</html>

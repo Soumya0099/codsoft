@@ -1,0 +1,453 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(18, 17, 17);
+    color: white;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background: url(image/Github3.png);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+.logo{
+    width: 243px;
+    height: 107px;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position:relative;
+    /* transition: 1s; */
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:rgb(216, 13, 13);
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h2{
+    font-size: 50px;
+    margin-top: 10px;
+}
+.header-text h2 span{
+    color:rgb(216, 13, 13);
+}
+
+/* -------------about----------- */
+#about{
+    padding: 50px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+.about-clo1{
+   flex-basis: 30%;
+}
+.about-clo1 img{
+    width: 100%;
+    border-radius: 20px;
+    /* height: 60vh; */
+}
+.about-clo2{
+    flex-basis: 65%;
+    margin-top: 10px;
+}
+.text{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+}
+.about-clo2 p{
+    /* padding: 5% 0; */
+    font-size: 20px;
+    font-weight: 200;
+}
+.skill{
+    display: flex;
+    /* margin: 10px 20px; */
+    /* justify-content: space-between; */
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+.sub-skils{
+    margin-right: 55px;
+    font-size: 500px;
+    font-weight: 300;
+    cursor: pointer;
+    position: relative;
+}
+.sub-skils::after{
+    content: '';
+    width: 100%;
+    height: 4px;
+    background: rgb(241, 28, 28);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+/* .sub-skils:hover::after{
+width: 50%;
+} */
+.skill-content ul li{
+   list-style: none;
+   margin: 10px 0;
+   font-size: 15px;
+}
+.skill-content ul li span{
+    font-size: 16px;
+    color: rgb(233, 63, 37);
+}
+/* .skill-content{
+    display: none;
+} */
+.skill-content.active{
+    display: block;
+}
+/* -------------service--------------- */
+#service{
+    padding: 30px 0;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service-list div{
+    background: rgb(40, 40, 40);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 350;
+    border-radius: 10px;
+    transition:transform 0.5s;
+
+}
+.service-list div i{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.service-list div h2{
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(233, 63, 37);
+    transition: 0.3s;
+}
+.service-list div a{
+    color: rgb(21, 178, 230);
+    text-decoration: none;
+    margin-top: 15px;
+    display: inline-block;
+}
+.service-list div:hover{
+    background: rgba(152, 245, 118, 0.856);
+    transform: translateY(-10px);
+}
+.service-list div h2:hover{
+    color: #fff;
+}
+/* -------------portfolio-------- */
+#portfolio{
+    padding: 50px 0;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+       border-radius: 10px;
+       position: relative;
+       overflow: hidden;
+}
+.work img{
+       width: 100%;
+       border-radius: 10px;
+       display: block;
+       transition: transform 0.5s;
+      
+}
+
+.layer{
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0 40px; */
+    text-align: center;
+    transition: height 0.7s;
+}
+.layer h3{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.layer p{
+    font-size: 17px;
+}
+.layer a {
+    font-size: 30px;
+    margin-top: 10px;
+    text-decoration: none;
+    line-height: 30px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.work:hover img{
+    transform: scale(1.2);
+}
+.work:hover .layer{
+    height: 100%;
+}
+/* --------------reach us-------------- */
+#reach-us{
+    margin-bottom: 30px;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-left p{
+    margin: 30px 0;
+}
+.text2{
+    font-size: 18px;
+}
+.contact-left p i{
+    margin-right: 10px;
+    color: aqua;
+    font-size: 25px;
+}
+.social-icon{
+    margin-top: 20px;
+    
+}
+.social-icon a{
+   font-size: 28px;
+   color: #c49ba8;
+   text-decoration: none;
+   margin-right: 20px;
+   display: inline-block;
+   transition: transform 0.5s;
+}
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn{
+    display: block;
+    margin: 20px 10px;
+    width: 40%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    outline: none;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: rgb(14, 14, 26);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    transition: 0.6s;
+    box-shadow: 0px 0px 60px #1f4c65;
+    -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4))
+}
+.btn:active {
+    scale: 0.92;
+  }
+
+  .btn:hover {
+    background: rgb(2,29,78);
+    background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+    color: rgb(4, 4, 38);
+  }
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-right form{
+    width: 100%;
+    
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #232729;
+    padding: 15px 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.btn.btn2{
+       margin: 0 auto;
+}
+.copyright p{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    background: rgb(28, 28, 28);
+    font-size: large;
+    font-weight: 500;
+    padding: 25px 0;
+
+}
+#copy{
+    margin-right: 10px;
+}
+.copyright p i{
+    color: aquamarine;
+}
+nav .fa-solid{
+    display: none;
+}
+
+/* -------------Media Qureries--------------- */
+
+@media only screen and (max-width:600px){
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    #header{
+        background-image: url(image/phone2.png);
+    }
+    .header-text{
+        margin-top: 100%;
+        
+    }
+    .header-text p{
+               font-size: 18px;
+    }
+    .header-text h2{
+        font-size: 25px;
+
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 30px;
+                
+
+    }
+    nav img{
+       position: absolute;
+       top: 9px;
+       left: 10px;
+    }
+    nav ul {
+        background: #141c25;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 40px;
+        font-size: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+        
+    }
+    nav ul li a{
+        font-size: 20px;
+        font-weight: 300;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    nav .fa-solid{
+        position: absolute;
+        top: 47px;
+        right: 35px;
+        cursor: pointer;
+        
+    }
+    .text{
+        display: flex;
+        font-size: 40px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .about-clo2 p{
+        font-size: 20px;
+    }
+    .about-clo1,.about-clo2{
+        flex-basis: 100%;
+    }
+    .about-clo1{
+        margin-bottom: 20px;
+    }
+    
+    .contact-right{
+        flex-basis: 100%;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .btn{
+        margin: 20px auto;
+        width: 40%;
+        font-size: 11px;
+    }
+}
